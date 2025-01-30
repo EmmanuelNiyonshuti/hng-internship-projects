@@ -1,4 +1,4 @@
-i# HNG Internship - Stage 0 Task: Public API
+# HNG Internship - Stage 0 Task: Public API
 
 This project implements a simple public API that returns basic information:
 - Email address
@@ -13,7 +13,7 @@ This project implements a simple public API that returns basic information:
 
 ### Steps:
 Clone the repository:
-```bash 
+```bash
 git clone https://github.com/EmmanuelNiyonshuti/hng-internship-projects
 
 Navigate to the project directory:
@@ -32,4 +32,4 @@ Run the app:
 
 python3 app.py
 
-Visit http://127.0.0.1:5000/api/user 
+Visit http://127.0.0.1:5000/api/user
