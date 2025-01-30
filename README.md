@@ -33,3 +33,11 @@ Run the app:
 python3 app.py
 
 Visit http://127.0.0.1:5000/api/user
+response = {
+  "email": "your-email@example.com",
+  "current_datetime": "2025-01-30T09:30:00Z",
+  "github_url": "<https://github.com/yourusername/your-repo>"
+}
+
+
+https://hng.tech/hire/python-developers
