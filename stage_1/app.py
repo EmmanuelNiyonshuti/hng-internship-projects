@@ -1,11 +1,41 @@
 from flask import Flask, request, jsonify
 import requests
-from is_prime import is_prime 
-from is_perfect import is_perfect
-from is_armstrong import is_armstrong
-from digit_sum import digit_sum
 
 app = Flask(__name__)
+""" checks if a number is a prime """
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    for i in range(3, n, 2):
+        if n % i == 0:
+            return False
+    return True
+
+
+def digit_sum(n):
+    return sum(int(d) for d in str(n))
+
+"""
+An Armstrong number (Narcissistic number) is a number
+that is equal to the sum of its digits raised
+to the power of the number of digits.
+"""
+def is_armstrong(n):
+    """
+    check is a number is armstrong.
+    """
+    digits = [int(digit) for digit in str(n)]
+    power = len(digits)
+    return sum(d ** power for d in digits) == n
+
+def is_perfect(n):
+    """ checks if  number is perfect """
+    divisors = [i for i in range(1, n) if n % i == 0]
+    return sum(divisors) == n
 
 @app.route("/numbers/classify-number", methods=["GET"])
 def classify_numbers():
