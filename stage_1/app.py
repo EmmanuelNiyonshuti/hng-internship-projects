@@ -37,7 +37,7 @@ def is_perfect(n):
     divisors = [i for i in range(1, n) if n % i == 0]
     return sum(divisors) == n
 
-@app.route("/numbers/classify-number", methods=["GET"])
+@app.route("/api/classify-number", methods=["GET"])
 def classify_numbers():
     num = request.args.get("number")
     if not num or not num.lstrip('-').isdigit():

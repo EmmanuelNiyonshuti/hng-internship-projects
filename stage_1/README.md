@@ -20,7 +20,7 @@ The API takes a number as input and returns the following properties:
 
 ### Example Request:
 ```
-GET https://your-api-url.com/api/classify-number?number=371
+GET https://hng-internship-projects-1.onrender.com/api/classify-number?number=371
 ```
 
 ### Example Response:
