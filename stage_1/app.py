@@ -17,7 +17,7 @@ def is_prime(n):
 
 
 def digit_sum(n):
-    return sum(int(d) for d in str(n))
+    return sum(int(d) for d in str(abs(n)))
 
 """
 An Armstrong number (Narcissistic number) is a number
@@ -28,7 +28,7 @@ def is_armstrong(n):
     """
     check is a number is armstrong.
     """
-    digits = [int(digit) for digit in str(n)]
+    digits = [int(digit) for digit in str(abs(n))]
     power = len(digits)
     return sum(d ** power for d in digits) == n
 
